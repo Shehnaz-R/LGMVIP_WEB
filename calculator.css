@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
+
+*
+{
+    box-sizing: border-box ;
+}
+
+body{
+    margin: 0;
+    padding:40px 20px;
+    background-color: #fff;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Montserrat','Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items:center ;
+    justify-content: center;
+    
+}
+
+h1{
+    margin: 5px;
+    text-align: center;
+}
+
+.calc{
+    display: inline-block ;
+    /* background: #275ba4; */
+    background: linear-gradient(50deg,#29507c,#c23838);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #3b1010;
+    max-width: 350px;
+}
+.calc input{
+    font-size: 1em;
+}
+
+input{
+
+    border-radius: 0px;
+    border: 0;
+    margin: 2px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+ input:focus
+{
+    animation: in-a 150ms linear 1;
+}
+@keyframes in-a{
+
+    0%,100%{
+        
+    }
+    
+    50%{
+        transform: scale(0);
+    }
+    
+}
+
+
+.primary{
+    background-color: #339adb;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.op{
+    background-image: linear-gradient(45deg,#9e7a7a,#c5c5c5);
+}
+.sec
+{
+    border: 1px solid #4eace6;
+    padding: 8px;
+    border-radius: 26px;
+    background-color: #fff;
+}
+input[disabled]{
+
+background-color: #fff;
+color: #000000;
+opacity: 1;
+animation: none;
+box-shadow:  0px 0px 10px #999;
+padding: 10px 5px;
+width: 100%;
+border-radius: 4px;
+overflow-x: visible
+}
